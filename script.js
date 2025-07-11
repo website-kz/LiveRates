@@ -76,4 +76,4 @@ fromAmount.addEventListener("input", convert);
 
 populateCurrencies();
 fetchRates().then(convert);
-setInterval(() => fetchRates().then(convert), 60000); // обновление раз в минуту
+setInterval(() => fetchRates().then(convert), 30000); // обновление раз в минуту
