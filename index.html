@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LiveRates™ – Валюты и Крипта</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>LiveRates™</h1>
+    <p>Курсы валют, крипты и металлов — бесплатно и мгновенно</p>
+
+    <div class="swap-box">
+      <div>
+        <label for="fromCurrency">Из:</label>
+        <select id="fromCurrency"></select>
+        <input type="number" id="fromAmount" placeholder="Сумма" />
+      </div>
+
+      <button id="swapBtn">⇄</button>
+
+      <div>
+        <label for="toCurrency">В:</label>
+        <select id="toCurrency"></select>
+        <input type="text" id="toAmount" placeholder="Итог" readonly />
+      </div>
+    </div>
+
+    <p class="timestamp" id="updated">Обновление...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
